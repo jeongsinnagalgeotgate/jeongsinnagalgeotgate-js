@@ -1,0 +1,44 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>정신나갈것같애</title>
+    <!-- <script type="text/javascript">
+        msg_coordinate="위치: "
+        msg_character="명령: "
+        msg_input_number="숫자를 입력하세요. 실행을 멈추려면 !!!를 입력하세요.";
+        msg_input_character="글자를 입력하세요. 실행을 멈추려면 !!!를 입력하세요.";
+    </script> -->
+</head>
+
+<body>
+    <h2>정신나갈것같애 인터프리터</h2>
+
+    <div>
+        <textarea id="code" rows="20" cols="80" wrap=off style="scrollbar=both;width:100%"
+            placeholder="코드짜는데정신나갈것같애"></textarea><br />
+        <input type="button" value="초기화" onclick='javascript:reset();'>
+        <input type="button" value="실행" onclick='javascript:run();'>
+        <input type="button" value="멈춤" onclick='running = false;'>
+        <input type="button" value="한 단계만" onclick='javascript:one_step();'>
+        <input type="button" value="메시지 지움" onclick='javascript:delete_msg();'><br />
+        <!-- <input type="checkbox" id="debug" checked="checked"
+            onchange='javascript:debug=document.forms[0].debug.checked;'>디버그<br /> -->
+        <!-- <div id="test_dump"></div> -->
+    </div>
+    <div style="float: left; width: 50%;">
+        <textarea id="dumps" style="scrollbar=both; width:100%; height: 25%" disabled placeholder="디버깅하느라정신나갈것같애"></textarea><br />
+        <textarea id="output" style="scrollbar=both; width:100%; height: 25%" disabled placeholder="출력하느라정신나갈것같애"></textarea>
+    </div>
+    <div style="float: right; width: 50%;"">
+        <textarea id="input" style="scrollbar=none; width:100%; height: 50%" placeholder="입력받는데정신나갈것같애"></textarea>
+    </div>
+
+
+    <script type="text/javascript"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
